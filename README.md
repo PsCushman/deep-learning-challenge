@@ -103,7 +103,11 @@ Automated optimisers, like hyperparameter tuners, systematically explore various
 
 This exploration was supposed to give me all the answers and save me by identifying the most optimal combination of hyperparameters for your specific problem, potentially leading to higher accuracy. It saves you from manually trying out different combinations and allows the optimiser to leverage its search algorithms to find the best configuration.
 
+![Screen Shot 2023-08-09 at 12 24 39 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/6decd39e-4020-4346-9ce3-01c53dcf9314)
+
 However, the best it could muster is 73%.
+
+![Screen Shot 2023-08-09 at 12 25 01 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/6c93c6fd-48dd-4cc2-9ac2-ad2ff00f75c2)
 
 # Conclusion
 
