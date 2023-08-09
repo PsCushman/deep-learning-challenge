@@ -97,15 +97,15 @@ Since feature importance did not provide any relef, I turned to a PCA model. Sim
 
 The PCA model only achieved 72% accuracy and so another door was closed.
 
-## Caving to the Automated Optimiser
+## Turning to the Automated Optimiser
 
-Automated optimisers, like hyperparameter tuners, systematically explore various combinations of hyperparameters, such as activation functions, number of layers, number of neurons, and epochs. 
+![Screen Shot 2023-08-09 at 1 44 10 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/d53db0ae-af4c-438e-b47d-3228227fa38c)
 
-This exploration was supposed to give me all the answers and save me by identifying the most optimal combination of hyperparameters for your specific problem, potentially leading to higher accuracy. It saves you from manually trying out different combinations and allows the optimiser to leverage its search algorithms to find the best configuration.
+The Keras Automated Optimiser, like other hyperparameter tuners, systematically explores various combinations of hyperparameters, such as activation functions, number of layers, number of neurons, and epochs. This exploration was supposed to give me all the answers and save me by identifying the most optimal combination of hyperparameters. Instead of manually trying out anymore  combinations, I turned to the the optimiser to leverage its search algorithms to find the best configuration.
 
 ![Screen Shot 2023-08-09 at 12 24 39 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/6decd39e-4020-4346-9ce3-01c53dcf9314)
 
-However, the best it could muster is 73%.
+However, what I found was that, fround the data we have, no model using the hyperparamters I set could cross the 75% acuracy threhold. And so, I was stuck at 73%.
 
 ![Screen Shot 2023-08-09 at 12 25 01 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/6c93c6fd-48dd-4cc2-9ac2-ad2ff00f75c2)
 
