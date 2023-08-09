@@ -91,7 +91,7 @@ I tried using the top 3, top 10, and top 25 most important features, but I never
 
 ## Utilizing PCA
 
-Since feature importance did not provide any relef, I turned to a PCA model. Similar results. Using the with 10 elements with the same combinations of activations, neurons and epochs that I had with which I had greatest sucess, did not improve my results.
+Since feature importance did not provide any relief, I turned to a PCA model. Similar results. Using the with 10 elements with the same combinations of activations, neurons and epochs that I had with which I had greatest sucess, did not improve my results.
 
 ![Screen Shot 2023-08-09 at 8 46 39 AM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/ce0adf64-4b38-494a-a6d8-b6ecde624de4)
 
