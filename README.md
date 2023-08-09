@@ -7,7 +7,7 @@
 *What variable(s) are the target(s) for your model?*
 
 The 'IS_SUCCESSFUL' column from application_df is the target variable, this is what we are trying to predict. This shows if the money was used effectively.
-
+ 
 *What variable(s) are the features for your model?*
 
 The feature variables we used are:
