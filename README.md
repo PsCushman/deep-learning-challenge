@@ -81,7 +81,8 @@ With all that, I was still only able to achieve 73 or less%
 I tried a different algorithm, Random Forest, to get some insights into the importance of different features. Random Forest features importance based on how effectively each feature contributes to the overall prediction. This analysis can help identify the key predictor columns, allowing you to focus on the most informative features and potentially improve accuracy.
 
 
-![Screen Shot 2023-08-09 at 8 33 42 AM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/fc3ea252-bff5-4cc7-8068-6bdfe0ed3928)
+![Screen Shot 2023-08-09 at 9 04 03 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/085537c9-5ee4-4744-bebc-95df6c9b6628)
+
 
 Analysing feature importance helps determine which attributes have the most significant impact on the output. By identifying and selecting the most important attributes, you can reduce the noise and complexity in the model. Focusing on the most relevant features can enhance the model's ability to capture meaningful patterns and improve accuracy.
 
@@ -91,7 +92,7 @@ I tried using the top 3, top 10, and top 25 most important features, but I never
 
 ## Utilizing PCA
 
-Since feature importance did not provide any relief, I turned to a PCA model. Similar results. Using the with 10 elements with the same combinations of activations, neurons and epochs that I had with which I had greatest sucess, did not improve my results.
+Since feature importance did not provide any relief, I turned to a PCA model. Similar results. Using PCA with 10 elements with the same combinations of activations, neurons and epochs with which I had greatest sucess, did not improve my results.
 
 ![Screen Shot 2023-08-09 at 8 46 39 AM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/ce0adf64-4b38-494a-a6d8-b6ecde624de4)
 
@@ -112,9 +113,3 @@ However, what I found was that, fround the data we have, no model using the hype
 # Conclusion
 
 The deep learning model that I have developed was unable to achieve accuracy higher than 73%. I makes me think it might not be possible with the methods I have at my disposile right now.
-
-However, I might try:
-
-Adding more data or increasing the size of my training dataset. 
-
-Addressing high bias and outliers.
