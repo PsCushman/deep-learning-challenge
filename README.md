@@ -6,7 +6,7 @@
 
 *What variable(s) are the target(s) for your model?*
 
-The 'IS_SUCCESSFUL' column from application_df is the target variable. In other words, we are trying to predict wether the money was used effectively.
+The 'IS_SUCCESSFUL' column from application_df is the target variable. In other words, we are trying to predict whether the money was used effectively.
  
 *What variable(s) are the features for your model?*
 
@@ -29,8 +29,7 @@ The "EIN" and "NAME" columns are identification columns that provide unique iden
 
 *How many neurons, layers, and activation functions did you select for your neural network model, and why?*
 
-In my first neural network model, I used a two-layer architecture with a specific choice for the number of neurons, layers, and activation functions.
-I chose two ReLu activtion to introduce non-linearity shapes and allow the model to learn complex relationships between the input features and the target variable.
+In my first neural network model, I used a two-layer architecture with a specific choice for the number of neurons, layers, and activation functions. I chose two ReLu activtion to introduce non-linearity shapes and allow the model to learn complex relationships between the input features and the target variable.
 
 Additionally, I used a single neuron in the output layer (units=1) with a sigmoid activation function (activation="sigmoid") to model the binary classification problem. The sigmoid activation function maps the output to a range between 0 and 1, representing the probability of the positive class.
 
@@ -56,7 +55,7 @@ Increasing the number of epochs gives the model more opportunities to learn from
 
 While increasing the number of neurons increased the speed at which the model got to around 73% accuracy, it did not improve the model. As for increasing the epochs, I increased them all the way to 500 without any success improving the model's performance.
 
-In fact, I added neurons to mutiple models, but any more than the amount I chose did not increase the model's perforamce on the test data. While the accuracy did inprove on the training model, it tended to overfit the data if I increased them much higher. 
+In fact, I added neurons to multiple models, but any more than the amount I chose did not increase the model's performance on the test data. While the accuracy did improve on the training model, it tended to overfit the data if I increased them much higher. 
 
 I chose 50 epoch to avoid anymore overfitting and because after a certain amount of epoch, it wasn't doing much to improve the model.
 
@@ -64,14 +63,13 @@ So while, it increased the speed, increasing nodes and epochs did not get me ove
 
 ## Adding Layers
 
+Adding more layers can provide the model with additional capacity to capture and represent intricate relationships within the data. Each layer can learn different levels of abstraction, enabling the model to extract more meaningful features and potentially improving accuracy. Deep models with multiple layers can learn hierarchical representations of the data, which can be advantageous for complex problems.
 
-Adding more layers can provide the model with additional capacity to capture and represent intricate relationships within the data. Each layer can learn different levels of abstraction, enabling the model to extract more meaningful features and potentially improving accuracy. Deep models with multiple layers have the ability to learn hierarchical representations of the data, which can be advantageous for complex problems.
-
-Similarly, I had the same results with 2,3, and 4 hidden layers. Increasing the layers over 2 hidden layers did not increase the model's performance by much at all, still topping off at around 73%. While there were times when the acruraccy of the training data improved, it resulted in an orverfitted model that did not produce great results for the test data.
+I had the same results with 2,3, and 4 hidden layers. Increasing the layers over 2 hidden layers did not increase the model's performance by much at all, still topping off at around 73%. While there were times when the accuracy of the training data improved, it resulted in an overfitted model that did not produce great results for the test data.
 
 ## Adjusting Activation Functions
 
-Introducing a different activation function, such as tanh, can affect how the model interprets and transforms the inputs. Different activation functions have different properties and can capture different types of non-linearities. I used tanh, relu, and sigmoid in any number of combinations, but with little success. In the end, begining with a ReLu activation and additonal ReLu layer, finishing with an output layer sigmoid, achieved my best results. 
+Introducing a different activation function, such as tanh, can affect how the model interprets and transforms the inputs. Different activation functions have different properties and can capture different types of non-linearities. I used tanh, ReLu, and sigmoid in any number of combinations, but with little success. In the end, starting with a ReLu activation and additional ReLu layer, finishing with an output layer sigmoid, achieved my best results. 
 
 ![Screen Shot 2023-08-13 at 9 08 28 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/7668f904-f234-478f-bdf7-12e09c817663)
 
@@ -87,11 +85,11 @@ I tried a different algorithm, Random Forest, to get some insights into the impo
 ![Screen Shot 2023-08-09 at 9 04 03 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/085537c9-5ee4-4744-bebc-95df6c9b6628)
 
 
-Analysing feature importance helps determine which attributes have the most significant impact on the output. By identifying and selecting the most important attributes, you can reduce the noise and complexity in the model. Focusing on the most relevant features can enhance the model's ability to capture meaningful patterns and improve accuracy.
+Analyzing feature importance helps determine which attributes have the most significant impact on the output. By identifying and selecting the most important attributes, you can reduce the noise and complexity in the model. Focusing on the most relevant features can enhance the model's ability to capture meaningful patterns and improve accuracy.
 
 ![Screen Shot 2023-08-09 at 8 53 24 AM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/3cd8b984-7757-4dfa-af03-5f38419f4f64)
 
-I tried using the top 3, top 10, and top 25 most important features, but I never got a model that was better than 73%. In the end, using all the features provided the best model for getting the best results. However, I did get a score that was only 2 percentage points off the the best model by using only 10 features.
+I tried using the top 3, top 10, and top 25 most important features, but I never got a model that was better than 73%. In the end, using all the features provided the best model for getting the best results. However, I did get a score that was only 2 percentage points off the best model by using only 10 features.
 
 *10 most Important Features*
 ![Screen Shot 2023-08-13 at 9 04 59 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/e92f7e0c-01a9-40d5-980e-06f76fe9de4c)
@@ -99,7 +97,7 @@ I tried using the top 3, top 10, and top 25 most important features, but I never
 
 ## Utilizing PCA
 
-Since feature importance did not provide any relief, I turned to a PCA model. Similar results. Using PCA with 10 elements with the same combinations of activations, neurons and epochs with which I had greatest sucess, did not improve my results.
+Since feature importance did not provide any relief, I turned to a PCA model. Similar results. Using PCA with 10 elements with the same combinations of activations, neurons and epochs with which I had greatest success, did not improve my results.
 
 ![Screen Shot 2023-08-09 at 8 46 39 AM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/ce0adf64-4b38-494a-a6d8-b6ecde624de4)
 
@@ -111,10 +109,10 @@ The PCA model only achieved 72% accuracy and so another door was closed.
 
 ![Screen Shot 2023-08-09 at 1 44 10 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/d53db0ae-af4c-438e-b47d-3228227fa38c)
 
-The Keras Automated Optimiser, like other hyperparameter tuners, systematically explores various combinations of hyperparameters, such as activation functions, number of layers, number of neurons, and epochs. This exploration was supposed to give me all the answers and save me by identifying the most optimal combination of hyperparameters. Instead of manually trying out anymore  combinations, I turned to the the optimiser to leverage its search algorithms to find the best configuration.
+The Keras Automated Optimiser, like other hyperparameter tuners, systematically explores various combinations of hyperparameters, such as activation functions, number of layers, number of neurons, and epochs. This exploration was supposed to give me all the answers and save me by identifying the most optimal combination of hyperparameters. Instead of manually trying out anymore combinations, I turned to the optimiser to leverage its search algorithms to find the best configuration.
 
 
-However, what I found was that, fround the data we have, no model using the hyperparamters I set could cross the 75% acuracy threhold. And so, I was stuck at 73%.
+However, I found that for the data I provided for the tuner, no model could cross the 75% accuracy threshold. And so, I was stuck at 73%.
 
 ![Screen Shot 2023-08-09 at 9 19 32 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/9fbb6300-19f4-4a2a-97ee-8f4521ddf471)
 
