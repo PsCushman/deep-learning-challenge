@@ -45,7 +45,7 @@ NO! I was only able to achieve 73%. The target model performance which was 75%.
 
 Well... 
 
-## Increasing neurons and epochs
+## Increasing Neurons and Epochs
 
 ![Screen Shot 2023-08-09 at 9 00 46 AM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/05b2d022-488f-438e-a427-ad96a577bb08)
 
@@ -73,10 +73,11 @@ Similarly, I had the same results with 2,3, and 4 hidden layers. Increasing the 
 
 Introducing a different activation function, such as tanh, can affect how the model interprets and transforms the inputs. Different activation functions have different properties and can capture different types of non-linearities. I used tanh, relu, and sigmoid in any number of combinations, but with little success. In the end, begining with a ReLu activation and additonal ReLu layer, finishing with an output layer sigmoid, achieved my best results. 
 
-![Screen Shot 2023-08-13 at 8 59 27 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/0796f31d-6ca4-48b1-bd88-b2710091ce94)
-
+![Screen Shot 2023-08-13 at 9 08 28 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/7668f904-f234-478f-bdf7-12e09c817663)
 
 With all that, I was still only able to achieve 73 or less%
+
+![Screen Shot 2023-08-13 at 9 11 09 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/81ff715c-2b36-4aa6-81d2-98ada051b14c)
 
 ## Checking Feature Importance
 
@@ -111,7 +112,6 @@ The PCA model only achieved 72% accuracy and so another door was closed.
 ![Screen Shot 2023-08-09 at 1 44 10 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/d53db0ae-af4c-438e-b47d-3228227fa38c)
 
 The Keras Automated Optimiser, like other hyperparameter tuners, systematically explores various combinations of hyperparameters, such as activation functions, number of layers, number of neurons, and epochs. This exploration was supposed to give me all the answers and save me by identifying the most optimal combination of hyperparameters. Instead of manually trying out anymore  combinations, I turned to the the optimiser to leverage its search algorithms to find the best configuration.
-
 
 
 However, what I found was that, fround the data we have, no model using the hyperparamters I set could cross the 75% acuracy threhold. And so, I was stuck at 73%.
