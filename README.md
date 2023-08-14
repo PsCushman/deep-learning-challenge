@@ -128,9 +128,6 @@ However, I found that for the data I provided for the tuner, no model could cros
 
 # Conclusion
 
-
-Conclusion: An Exhaustive Effort to Improve Model Performance
-
 A wide-ranging effort was made to enhance the performance of my neural network model for this binary classification task. The initial model architecture was a two-layer network with two hidden ReLU activations, which aimed to strike a balance between complexity and simplicity, enabling effective learning and generalization.
 
 Despite thoughtful and comprehensive design choices, the target model performance of 75% accuracy was not reached. Several strategies were employed to achieve this goal, but none resulted in the desired outcome.
