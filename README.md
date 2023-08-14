@@ -94,6 +94,15 @@ I tried using the top 3, top 10, and top 25 most important features, but I never
 *10 most Important Features*
 ![Screen Shot 2023-08-13 at 9 04 59 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/e92f7e0c-01a9-40d5-980e-06f76fe9de4c)
 
+## Attempting Resampling 
+
+In an attempt to address class imbalance in the dataset, I applied resampling techniques to balance the class distribution. Resampling involves adjusting the number of samples in each class to mitigate the effects of imbalanced data. Specifically, we used the RandomOverSampler from the imbalanced-learn library to generate synthetic samples for the minority class.
+
+![Screen Shot 2023-08-14 at 2 40 04 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/6dba74d7-f967-468a-a321-bbf03e8f07f1)
+
+While the intention behind resampling was to improve the model's performance, the results did not show the desired improvement. Despite the balanced class distribution achieved through resampling, the model's performance metrics such as accuracy and loss did not exhibit the expected enhancement.
+
+![Screen Shot 2023-08-14 at 2 40 56 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/fc670bc4-ba6f-4d0e-9c11-5964b38e7b95)
 
 ## Utilizing PCA
 
@@ -119,4 +128,29 @@ However, I found that for the data I provided for the tuner, no model could cros
 
 # Conclusion
 
-The deep learning model that I have developed was unable to achieve accuracy higher than 73%. I makes me think it might not be possible with the methods I have at my disposile right now.
+
+Conclusion: An Exhaustive Effort to Improve Model Performance
+
+A wide-ranging effort was made to enhance the performance of my neural network model for this binary classification task. The initial model architecture was a two-layer network with two hidden ReLU activations, which aimed to strike a balance between complexity and simplicity, enabling effective learning and generalization.
+
+Despite thoughtful and comprehensive design choices, the target model performance of 75% accuracy was not reached. Several strategies were employed to achieve this goal, but none resulted in the desired outcome.
+
+*For example...*
+
+Increasing Neurons and Epochs: Adding more neurons and epochs to capture complex patterns and allow the model to refine its predictions did not yield substantial improvements. The model plateaued at around 73% accuracy despite these adjustments.
+
+Adding Layers: Experimenting with deeper architectures by adding more hidden layers did not lead to significant improvements. The model's performance remained around the same level.
+
+Adjusting Activation Functions: Trying different activation functions like tanh, ReLU, and sigmoid, both individually and in combinations, did not produce better results than the original ReLU activation.
+
+Feature Importance Analysis: Exploring feature importance through methods like Random Forest did not result in feature selections that led to a substantial increase in accuracy.
+
+Resampling Techniques: Applying resampling techniques to address class imbalance did not lead to the desired enhancement in model performance, as the accuracy remained around 73%.
+
+Principal Component Analysis (PCA): Implementing PCA with various configurations and activation functions did not yield the desired improvement, with accuracy remaining at 72%.
+
+Automated Hyperparameter Tuning: Utilizing an automated optimizer to systematically search for optimal hyperparameters also did not result in surpassing the 73% accuracy barrier.
+
+The culmination of these efforts demonstrates the complexity of the problem and the challenges in achieving substantial improvements in model performance. The inability to breach the 75% accuracy target suggests that other factors, such as inherent complexity in the data, feature quality, or limitations in the dataset size, might be contributing to the stagnation in model performance.
+
+In conclusion, the analysis highlights that model improvement is a multifaceted process that involves a deep understanding of the problem, the dataset, and the interactions between various model components. Despite exhaustive exploration and experimentation, the elusive 75% accuracy threshold was not reached, underscoring the inherent complexity of certain machine learning tasks and the need for careful consideration in model design, hyperparameter tuning, and feature engineering.
