@@ -1,6 +1,8 @@
 # Deep Learning and Neural Networks - *The Alpha Soup Charity Challenge*
 
-![Screen Shot 2023-08-08 at 10 49 31 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/5c0ca181-2d3c-4492-b206-e975cef028ff)
+<img src="https://github.com/PsCushman/deep-learning-challenge/assets/122395437/5c0ca181-2d3c-4492-b206-e975cef028ff" alt="Image" style="width:100%;">
+
+#![Screen Shot 2023-08-08 at 10 49 31 PM](https://github.com/PsCushman/deep-learning-challenge/assets/122395437/5c0ca181-2d3c-4492-b206-e975cef028ff)
 
 ## Data Preprocessing
 
